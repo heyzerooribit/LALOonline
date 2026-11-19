@@ -72,3 +72,4 @@ nav a[aria-current="page"]{color:var(--teal);font-weight:700;text-decoration:und
 .lcount{font-weight:700;font-size:1.25rem;color:var(--teal);min-height:1.5em;margin:18px 0 0}
 @media (prefers-reduced-motion:reduce){.lbox,.lbox:active{transition:none;transform:none}}
 .install{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.25)}.install .btn{border:0;cursor:pointer;font:inherit;font-weight:700}.install p{margin:.4em 0}
+.alt2{background:transparent;color:var(--ink);border:2px solid var(--ink);cursor:pointer;font:inherit;font-weight:700}

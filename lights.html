@@ -23,7 +23,8 @@
 <p class="lede">Every light is a promise to stay. Tap a box to leave a light on. Your lights stay lit on this device.</p>
 <p id="lcount" class="lcount" aria-live="polite"></p>
 <div id="lgrid" role="group" aria-label="Grid of lights"></div>
-<p class="src">Press and hold the title for four seconds to turn all the lights off and start over.</p>
+<p><button type="button" id="lreset" class="btn alt2">Reset all lights</button></p>
+<p class="src">Testing: this clears the lights on this device only. You can also press and hold the title for four seconds.</p>
 <p class="next"><a class="btn" href="act">Next: Take action →</a></p>
 </div></section>
 
@@ -48,6 +49,8 @@ function start(){timer=setTimeout(function(){if(confirm("Turn all lights off and
 function stop(){clearTimeout(timer)}
 ["touchstart","mousedown"].forEach(function(e){title.addEventListener(e,start)});
 ["touchend","touchcancel","mouseup","mouseleave"].forEach(function(e){title.addEventListener(e,stop)});
+var rb=document.getElementById("lreset"),rt=null;
+rb.addEventListener("click",function(){if(rb.dataset.arm){clearTimeout(rt);delete rb.dataset.arm;rb.textContent="Reset all lights";lit={};save();Array.prototype.forEach.call(grid.children,function(b,i){paint(b,i)});updateCount();return}rb.dataset.arm="1";rb.textContent="Tap again to confirm";rt=setTimeout(function(){delete rb.dataset.arm;rb.textContent="Reset all lights"},4000)});
 })();
 </script>
 <script src="app.js" defer></script>
