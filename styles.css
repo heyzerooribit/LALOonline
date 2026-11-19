@@ -62,3 +62,4 @@ nav a[aria-current="page"]{color:var(--teal);font-weight:700;text-decoration:und
 .tile{display:block;text-decoration:none;color:inherit;transition:border-color .15s}.tile:hover,.tile:focus-visible{border-color:var(--lamp)}.tile h3{color:var(--teal);margin-bottom:.2em}.tile p{margin:0;color:var(--muted);font-size:.97rem}
 .explore{padding-top:48px}.next{margin-top:40px}
 .song iframe.sp{border:0;border-radius:12px;margin-top:10px;display:block}
+.stage{aspect-ratio:16/9;background:#111;border:1px solid var(--line);border-radius:14px;display:grid;place-items:center;color:#fff;text-align:center;margin-top:26px;padding:20px}.stage .dot{display:block;width:34px;height:46px;border-radius:4px;background:var(--lamp);box-shadow:0 0 30px 8px rgba(217,0,0,.5);margin:0 auto 14px}.stage p{margin:0}.stage .sm{opacity:.75;font-size:.95rem;margin-top:.3em}
