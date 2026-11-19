@@ -8,7 +8,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 1.06rem/1.65 Figtre
 h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;line-height:1.15;margin:0 0 .5em}
 h2{font-size:clamp(1.8rem,4vw,2.5rem)}h3{font-size:1.3rem}
 a{color:var(--teal)}a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--lamp);outline-offset:3px}
-.wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+.wrap{max-width:none;margin:0 auto;padding:0 clamp(22px,5vw,80px)}
 .crisis{background:#111;color:#fff;text-align:center;padding:10px 16px;font-weight:600;font-size:.97rem}
 .crisis a{color:#fff}
 nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
@@ -61,5 +61,7 @@ footer{background:var(--night);color:#f2f2f2;padding:40px 0;font-size:.95rem}foo
 nav a[aria-current="page"]{color:var(--teal);font-weight:700;text-decoration:underline}
 .tile{display:block;text-decoration:none;color:inherit;transition:border-color .15s}.tile:hover,.tile:focus-visible{border-color:var(--lamp)}.tile h3{color:var(--teal);margin-bottom:.2em}.tile p{margin:0;color:var(--muted);font-size:.97rem}
 .explore{padding-top:48px}.next{margin-top:40px}
+@media(min-width:900px){.hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);column-gap:64px;align-items:center}.hero .wrap>*{grid-column:1}.hero .wrap>.windows{grid-column:2;grid-row:1/span 5;max-width:none;margin:0;gap:12px}}
+@media(min-width:1000px){nav .wrap{flex-wrap:wrap;overflow:visible;white-space:normal;gap:6px 24px}}
 .song iframe.sp{border:0;border-radius:12px;margin-top:10px;display:block}
-.stage{aspect-ratio:16/9;background:#111;border:1px solid var(--line);border-radius:14px;display:grid;place-items:center;color:#fff;text-align:center;margin-top:26px;padding:20px}.stage .dot{display:block;width:34px;height:46px;border-radius:4px;background:var(--lamp);box-shadow:0 0 30px 8px rgba(217,0,0,.5);margin:0 auto 14px}.stage p{margin:0}.stage .sm{opacity:.75;font-size:.95rem;margin-top:.3em}
+.stage{max-width:1200px;aspect-ratio:16/9;background:#111;border:1px solid var(--line);border-radius:14px;display:grid;place-items:center;color:#fff;text-align:center;margin-top:26px;padding:20px}.stage .dot{display:block;width:34px;height:46px;border-radius:4px;background:var(--lamp);box-shadow:0 0 30px 8px rgba(217,0,0,.5);margin:0 auto 14px}.stage p{margin:0}.stage .sm{opacity:.75;font-size:.95rem;margin-top:.3em}
