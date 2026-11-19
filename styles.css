@@ -71,3 +71,4 @@ nav a[aria-current="page"]{color:var(--teal);font-weight:700;text-decoration:und
 .lbox.on{background:radial-gradient(circle at 50% 45%,#ff9a90 0%,var(--lamp) 60%,#a80000 100%);box-shadow:0 0 10px 2px rgba(217,0,0,.45),0 0 26px 5px rgba(217,0,0,.2);cursor:default}
 .lcount{font-weight:700;font-size:1.25rem;color:var(--teal);min-height:1.5em;margin:18px 0 0}
 @media (prefers-reduced-motion:reduce){.lbox,.lbox:active{transition:none;transform:none}}
+.install{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.25)}.install .btn{border:0;cursor:pointer;font:inherit;font-weight:700}.install p{margin:.4em 0}
