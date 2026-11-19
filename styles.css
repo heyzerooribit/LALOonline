@@ -65,3 +65,9 @@ nav a[aria-current="page"]{color:var(--teal);font-weight:700;text-decoration:und
 @media(min-width:1000px){nav .wrap{flex-wrap:wrap;overflow:visible;white-space:normal;gap:6px 24px}}
 .song iframe.sp{border:0;border-radius:12px;margin-top:10px;display:block}
 .stage{max-width:1200px;aspect-ratio:16/9;background:#111;border:1px solid var(--line);border-radius:14px;display:grid;place-items:center;color:#fff;text-align:center;margin-top:26px;padding:20px}.stage .dot{display:block;width:34px;height:46px;border-radius:4px;background:var(--lamp);box-shadow:0 0 30px 8px rgba(217,0,0,.5);margin:0 auto 14px}.stage p{margin:0}.stage .sm{opacity:.75;font-size:.95rem;margin-top:.3em}
+#lgrid{display:grid;gap:clamp(4px,.7vw,7px);grid-template-columns:repeat(auto-fill,minmax(46px,1fr));margin-top:20px}
+.lbox{aspect-ratio:1;border-radius:8px;border:1.5px solid transparent;background:var(--line);padding:0;cursor:pointer;transition:background .35s ease,box-shadow .35s ease,transform .15s ease;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.lbox:active{transform:scale(.94)}.lbox:focus-visible{outline:3px solid var(--lamp);outline-offset:3px}
+.lbox.on{background:radial-gradient(circle at 50% 45%,#ff9a90 0%,var(--lamp) 60%,#a80000 100%);box-shadow:0 0 10px 2px rgba(217,0,0,.45),0 0 26px 5px rgba(217,0,0,.2);cursor:default}
+.lcount{font-weight:700;font-size:1.25rem;color:var(--teal);min-height:1.5em;margin:18px 0 0}
+@media (prefers-reduced-motion:reduce){.lbox,.lbox:active{transition:none;transform:none}}
